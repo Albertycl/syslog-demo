@@ -1,0 +1,74 @@
+{
+ "apply": [
+  {
+   "kind": "alert",
+   "keyword": "vlan",
+   "vendor": "cisco"
+  },
+  {
+   "kind": "alert",
+   "keyword": "DOWN",
+   "vendor": "cisco"
+  },
+  {
+   "kind": "alert",
+   "keyword": "neighbor",
+   "vendor": "cisco"
+  },
+  {
+   "kind": "alert",
+   "keyword": "reset",
+   "vendor": "cisco"
+  },
+  {
+   "kind": "alert",
+   "keyword": "failover",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "alert",
+   "keyword": "no member",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "alert",
+   "keyword": "PSU",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "alert",
+   "keyword": "standby",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "alert",
+   "keyword": "link-down",
+   "vendor": "paloalto"
+  },
+  {
+   "kind": "alert",
+   "keyword": "system-shutdown",
+   "vendor": "paloalto"
+  },
+  {
+   "kind": "alert",
+   "keyword": "ha1-link-change",
+   "vendor": "paloalto"
+  },
+  {
+   "kind": "ignore",
+   "keyword": "Idle enforcer",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "ignore",
+   "keyword": "All devices in the device group are in sync",
+   "vendor": "LTM"
+  },
+  {
+   "kind": "ignore",
+   "keyword": "tmui/",
+   "vendor": "LTM"
+  }
+ ]
+}

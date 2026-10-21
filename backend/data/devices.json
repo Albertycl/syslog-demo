@@ -1,0 +1,165 @@
+{
+ "note": "Fictional demo devices. IPs are from the RFC 5737 documentation ranges.",
+ "devices": [
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-RTR01",
+   "ip": "192.0.2.11",
+   "vendor": "cisco",
+   "folder": "Routers",
+   "floor": "1F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-RTR02",
+   "ip": "192.0.2.12",
+   "vendor": "cisco",
+   "folder": "Routers",
+   "floor": "1F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-SW01",
+   "ip": "192.0.2.21",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-SW02",
+   "ip": "192.0.2.22",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-SW03",
+   "ip": "192.0.2.23",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-OOB01",
+   "ip": "192.0.2.31",
+   "vendor": "cisco",
+   "folder": "OOB",
+   "floor": "2F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-LTM01",
+   "ip": "203.0.113.11",
+   "vendor": "LTM",
+   "folder": "LTM",
+   "floor": "1F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-LTM02",
+   "ip": "203.0.113.12",
+   "vendor": "LTM",
+   "folder": "LTM",
+   "floor": "1F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-FW01",
+   "ip": "198.51.100.11",
+   "vendor": "paloalto",
+   "folder": "Firewall",
+   "floor": "1F"
+  },
+  {
+   "infra": "ALPHA",
+   "name": "ALPHA-FW02",
+   "ip": "198.51.100.12",
+   "vendor": "paloalto",
+   "folder": "Firewall",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-RTR01",
+   "ip": "192.0.2.111",
+   "vendor": "cisco",
+   "folder": "Routers",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-RTR02",
+   "ip": "192.0.2.112",
+   "vendor": "cisco",
+   "folder": "Routers",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-SW01",
+   "ip": "192.0.2.121",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-SW02",
+   "ip": "192.0.2.122",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-SW03",
+   "ip": "192.0.2.123",
+   "vendor": "cisco",
+   "folder": "Switches",
+   "floor": "2F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-OOB01",
+   "ip": "192.0.2.131",
+   "vendor": "cisco",
+   "folder": "OOB",
+   "floor": "2F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-LTM01",
+   "ip": "203.0.113.111",
+   "vendor": "LTM",
+   "folder": "LTM",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-LTM02",
+   "ip": "203.0.113.112",
+   "vendor": "LTM",
+   "folder": "LTM",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-FW01",
+   "ip": "198.51.100.111",
+   "vendor": "paloalto",
+   "folder": "Firewall",
+   "floor": "1F"
+  },
+  {
+   "infra": "BRAVO",
+   "name": "BRAVO-FW02",
+   "ip": "198.51.100.112",
+   "vendor": "paloalto",
+   "folder": "Firewall",
+   "floor": "1F"
+  }
+ ]
+}

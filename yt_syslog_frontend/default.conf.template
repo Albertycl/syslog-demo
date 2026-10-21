@@ -1,0 +1,18 @@
+server {
+    listen 80;
+    root /usr/share/nginx/html;
+
+    location /api/ {
+        proxy_pass ${API_UPSTREAM};
+        proxy_set_header Host $host;
+        proxy_read_timeout 60s;
+    }
+
+    location /static/ {
+        proxy_pass ${API_UPSTREAM};
+    }
+
+    location / {
+        try_files $uri $uri/ /index.html;
+    }
+}

@@ -1,0 +1,44 @@
+# Run:  cp .env.example .env && docker compose up --build
+# UI:   http://<this-host>:8090   (the backend is only reachable through the UI's /api proxy)
+# Database: set DATABASE_URL in .env to any MariaDB/MySQL. To start a bundled one instead:
+#   docker compose --profile db up --build   (and use the mariadb URL shown in .env.example)
+services:
+  mariadb:
+    profiles: ["db"]
+    image: mariadb:11.1
+    restart: unless-stopped
+    environment:
+      MARIADB_ROOT_PASSWORD: ${MYSQL_ROOT_PASSWORD:-}
+      MARIADB_DATABASE: syslog_demo
+    volumes:
+      - mariadb-data:/var/lib/mysql
+    healthcheck:
+      test: ["CMD", "healthcheck.sh", "--connect", "--innodb_initialized"]
+      interval: 5s
+      timeout: 5s
+      retries: 20
+
+  backend:
+    build: ./backend
+    restart: unless-stopped
+    environment:
+      DATABASE_URL: ${DATABASE_URL:?copy .env.example to .env}
+      COLLECT_INTERVAL_SECONDS: ${COLLECT_INTERVAL_SECONDS:-20}
+      COLLECT_WINDOW_MINUTES: ${COLLECT_WINDOW_MINUTES:-5}
+      CORS_ORIGINS: ${CORS_ORIGINS:-http://localhost:8090}
+    depends_on:
+      mariadb:
+        condition: service_healthy
+        required: false
+
+  frontend:
+    build: ./yt_syslog_frontend
+    restart: unless-stopped
+    environment:
+      API_UPSTREAM: http://backend:5100
+    depends_on: [backend]
+    ports:
+      - "8090:80"
+
+volumes:
+  mariadb-data:
